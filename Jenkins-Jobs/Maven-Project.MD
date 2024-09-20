@@ -18,7 +18,7 @@
 2. **Create a new Jenkins job:**  
    - In Jenkins, click on **New Item**.
    - Enter the job name as `My_First_Maven_Build`.
-   - Select **Freestyle project** and click **OK**.
+   - Select **Mavens project** and click **OK**.
 
 3. **Configure the Jenkins Job:**  
    - Under **Source Code Management**, select **Git**.
@@ -29,7 +29,7 @@
      `*/master` or `*/main`, depending on your repository setup.
 
 4. **Configure Build Settings:**  
-   - Under the **Build** section, select **Invoke top-level Maven targets**.
+   - Under the **Build**.
    - In the **Root POM**, enter: `pom.xml`.
    - In the **Goals and options**, enter: `clean install package`.
 
