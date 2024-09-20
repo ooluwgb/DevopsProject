@@ -1,26 +1,16 @@
-# Create a First Maven Jenkins Job to Build Hello World Project  
-**Jenkins Job Name:** `My_First_Maven_Build`
-
-We have learned how to work with Git and Jenkins independently. Now, it's time to integrate them together for a simple DevOps project. Follow the steps below to complete this task. You will enjoy the process!
-
----
-
-### **Pre-requisites:**
-
-- A running Jenkins server. Make sure Jenkins is updated to the latest version.
-- Install the latest version of Maven on your Jenkins server (if it's not already installed). You can verify this under `Manage Jenkins` > `Global Tool Configuration` > `Maven`.
-- If not installed follow the Instruction to install MAVENS in the Jenkins-Tool directory in this repository.
-
----
-
-### **Fork the Repository:**
+### Fork the Repositories:
 
 1. Go to the repository [DevopsProject](https://github.com/ooluwgb/DevopsProject.git).
-2. Click the "Fork" button at the top right of the GitHub page to create a copy of the repository in your own GitHub account. This forked repository will now be under your username.
+   - Click the **Fork** button at the top right of the GitHub page to create a copy of the repository in your own GitHub account. This forked repository will now be under your username.
+   - This is the repository where you will follow the instructions and document your progress.
+
+2. Next, go to the repository [MAVENS-JENKINS-PROJECT](https://github.com/ooluwgb/MAVENS-JENKINS-PROJECT.git).
+   - Click the **Fork** button at the top right to create a copy of this repository in your own GitHub account.
+   - You will be using this forked repository for the Jenkins job configuration.
 
 ---
 
-### **Steps to Create "My_First_Maven_Build" Jenkins Job:**
+### **Steps to Configure the Jenkins Job:**
 
 1. **Login to Jenkins console**  
    Ensure that your Jenkins server is running and accessible via your browser.
@@ -32,8 +22,8 @@ We have learned how to work with Git and Jenkins independently. Now, it's time t
 
 3. **Configure the Jenkins Job:**  
    - Under **Source Code Management**, select **Git**.
-   - In the **Repository URL** field, enter the URL of your forked repository. This will be something like:  
-     `https://github.com/<your-username>/DevopsProject.git`  
+   - In the **Repository URL** field, enter the URL of your forked repository for the MAVENS-JENKINS-PROJECT. This will be something like:  
+     `https://github.com/<your-username>/MAVENS-JENKINS-PROJECT.git`  
    Replace `<your-username>` with your actual GitHub username.
    - In **Branches to build**, enter:  
      `*/master` or `*/main`, depending on your repository setup.
@@ -60,6 +50,7 @@ We have learned how to work with Git and Jenkins independently. Now, it's time t
 
 ---
 
-Make sure to review all your configurations and ensure Jenkins and Maven are using the latest versions to avoid compatibility issues. If necessary, update Jenkins plugins and tools through the **Manage Jenkins** section.
+### **Important Notes:**
 
---- 
+- Ensure that you follow the instructions in your own fork of the **DevopsProject** repository.
+- Use your forked **MAVENS-JENKINS-PROJECT** repository for configuring and running the Jenkins job.
