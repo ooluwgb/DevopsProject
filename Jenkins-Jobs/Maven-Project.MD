@@ -9,6 +9,7 @@ We have learned how to work with Git and Jenkins independently. Now, it's time t
 
 - A running Jenkins server. Make sure Jenkins is updated to the latest version.
 - Install the latest version of Maven on your Jenkins server (if it's not already installed). You can verify this under `Manage Jenkins` > `Global Tool Configuration` > `Maven`.
+- If not installed follow the Instruction to install MAVENS in the Jenkins-Tool directory in this repository.
 
 ---
 
