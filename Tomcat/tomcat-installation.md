@@ -121,7 +121,7 @@
    - Edit the `tomcat-users.xml` file to enable access to the **Manager** and **Admin** apps:
 
      ```bash
-     sudo nano /opt/tomcat/apache-tomcat-10.1.30/conf/tomcat-users.xml
+     sudo vim /opt/tomcat/apache-tomcat-10.1.30/conf/tomcat-users.xml
      ```
 
    - Add the following users and roles at the end of the file:
