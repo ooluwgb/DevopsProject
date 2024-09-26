@@ -66,7 +66,7 @@
    - Download the latest stable version of **Tomcat 10.1.8** (you can find the latest version [here](https://tomcat.apache.org/download-10.cgi)):
 
      ```bash
-     sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.8/bin/apache-tomcat-10.1.8.tar.gz
+     sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.30/bin/apache-tomcat-10.1.30.tar.gz
      ```
 
    - Extract the downloaded tarball:
