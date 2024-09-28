@@ -4,7 +4,7 @@
 ### Pre-requisites
 
 1. **Jenkins Server**: Ensure that Jenkins is installed and running.
-2. **Tomcat Server**: You should have a Tomcat 10.1.30 server installed on an Ubuntu 24.04 EC2 instance as outlined in the [Tomcat Setup Guide](#).
+2. **Tomcat Server**: You should have a Tomcat 10.1.30 server installed on an Ubuntu 24.04 EC2 instance. Before proceeding, refer to the `Tomcat/tomcatinstallation.md` in the instruction repository to set up Tomcat properly.
 
 ### Adding Deployment Steps
 
@@ -34,8 +34,7 @@
    - Click `OK`.
 
 2. **Source Code Management**:
-   - Repository: `https://github.com/yankils/hello-world.git`
-   - Branches to build: `*/master`.
+   - Repository: Use your forked **application repository** for the deployment.
 
 3. **Poll SCM**:
    - Set the poll schedule to trigger builds periodically:  
@@ -58,3 +57,10 @@
 - Once the job is configured, save it.
 - Click `Build Now` to trigger the job.
 - Jenkins will deploy the WAR file to your Tomcat server running on the public IP of your EC2 instance.
+
+---
+
+### Important Notes:
+
+- Ensure you have set up Tomcat correctly by following the instructions in `Tomcat/tomcatinstallation.md`.
+- Use your own repository URL when configuring the Jenkins job.
