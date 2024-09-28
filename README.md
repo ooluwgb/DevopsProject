@@ -1,4 +1,3 @@
-
 # DevOps Project Repository
 
 Welcome to the **DevOps Project** repository! In this repository, you will find all the necessary instructions, configuration files, and steps required to deploy an application. This project will guide you through setting up and automating the deployment process in a step-by-step manner using Jenkins, Docker, and other DevOps tools.
@@ -35,7 +34,59 @@ git clone https://github.com/ooluwgb/APPLICATION.git
 git clone https://github.com/ooluwgb/DevopsProject.git
 ```
 
-### Step 2: Follow the Instructions in This Repository
+### Step 2: Remove Existing Remote Origins and Set Your Own Remote
+
+After cloning the repositories, you will need to remove the existing remote origins, generate your own remote repository on GitHub or another Git provider, and then add that remote to the cloned repositories.
+
+#### Remove the Existing Remote Origin
+
+Navigate to the directory where the repository is cloned and run the following commands to remove the existing remote origin:
+
+```bash
+# Navigate to the Application repository
+cd APPLICATION/
+# Remove the current remote origin
+git remote remove origin
+
+# Navigate to the DevOps Project repository
+cd ../DevopsProject/
+# Remove the current remote origin
+git remote remove origin
+```
+
+#### Create Your Own Repository
+
+Go to GitHub (or your preferred Git hosting provider) and create two new repositories (without readme.md files), one for the application code and one for the DevOps project.
+
+#### Add Your New Remote Origin
+
+After creating the repositories, you need to add them as the new remote origin for your cloned repositories:
+
+```bash
+# Add your personal remote origin to the Application repository
+cd ../APPLICATION/
+git remote add origin https://github.com/<your-username>/<your-application-repo>.git
+
+# Add your personal remote origin to the DevOps Project repository
+cd ../DevopsProject/
+git remote add origin https://github.com/<your-username>/<your-devops-repo>.git
+```
+
+### Step 3: Push the Code to Your Repository
+
+Once you have added your personal remote origin, you can push the code to your newly created repositories:
+
+```bash
+# Push the Application repository
+cd APPLICATION/
+git push -u origin main
+
+# Push the DevOps Project repository
+cd ../DevopsProject/
+git push -u origin main
+```
+
+### Step 4: Follow the Instructions in This Repository
 
 In the **DevOps Project** repository, you will find detailed steps and configurations for each project. Navigate to the `Jenkins-job/` directory and start working on the projects listed there.
 
@@ -46,7 +97,7 @@ Each project is numbered, and you should **follow the order** in which the proje
 cd Jenkins-job/
 ```
 
-### Step 3: Deployment of the Application
+### Step 5: Deployment of the Application
 
 The **application code** you'll be deploying is located in the **Application Repository** you cloned earlier. During the projects, you will be configuring the deployment pipeline to automate the deployment of this application.
 
